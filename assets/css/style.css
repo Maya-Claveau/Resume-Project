@@ -14,12 +14,24 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-skills {
+    background-color: #ffffff;
+}
+
 .bg-color-work-history {
     background-color: #9b59b6;
 }
 
-.bg-collor-contact {
-    background-color: #fff;
+.bg-color-contact {
+    background-color: #ffffff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
 }
 
 .ui-menu-color-home {
@@ -35,12 +47,30 @@
 }
 
 .ui-menu-color-download {
+    background-color: #d9a81d;
+}
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
     background-color: #525252;
+    color: #555555;
 }
 
 /* ------------------------------------Special paddings/margins/text */
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
 }
 
@@ -51,7 +81,7 @@ h1, h2, h3, h4 {
 .general-sub {
     font-family: "Exo", sans-serif;
     font-weight: 300;
-    color: #fafafa;    
+    color: #fafafa;
 }
 
 .inline-block {
@@ -60,12 +90,6 @@ h1, h2, h3, h4 {
 
 .row-table {
     display: table;
-}
-
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;    
 }
 
 .history-heading,
@@ -114,27 +138,18 @@ header {
     color: #fff;
 }
 
-.list-inline-item:not(:last-child) {
+#nav {
     margin: 0;
 }
 
-.menucontainer {
-    font-size: 0;
-}
-
-#nav {
-    margin-bottom: 0;
-}
-
 #nav li {
-    font-size: 14px;
     padding: 0;
 }
 
 .menuitem {
     height: 120px;
     text-align: center;
-    padding: 0;    
+    padding: 0;
 }
 
 .menuitem a {
@@ -164,7 +179,7 @@ header {
 
 /* ------------------------------------Hover.css */
 .hvr-sweep-to-bottom:before {
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
@@ -177,23 +192,23 @@ footer {
     margin: 0;
 }
 
-.cv-pdf i {
+footer .cv-pdf i {
     font-size: 18px;
     color: #fafafa;
     text-align: center;
     padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
 
-.cv-pdf i:hover {
-    color: #e84610;
-}
-
 .social-links {
-    padding-bottom: 15px;    
+    padding-bottom: 15px;
 }
 
 .social-links li a i {
@@ -201,21 +216,23 @@ footer {
     height: 32px;
     padding: 12px 0;
     border-radius: 50%;
+    font-size: 13px;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
     background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
-    background-color: #e84610;
+    background: #e84610;
 }
 
 #footer-details {
-    padding: 20px;
+    margin: 20px;
 }
 
 /* ------------------------------------Three reasons */
@@ -234,13 +251,12 @@ footer {
 .personal-info-item {
     margin-bottom: 20px;
     display: block;
-    clear: both;    
+    clear: both;
 }
 
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
-    display: inline-block;
 }
 
 .personal-info-item .key p,
@@ -249,6 +265,7 @@ footer {
 }
 
 .personal-info-item .key {
+    display: inline-block;
     width: 30%;
     margin-right: 21px;
     padding-top: 2px;
@@ -260,6 +277,7 @@ footer {
 }
 
 .personal-info-item .value {
+    display: inline-block;
     position: relative;
     width: 60%;
 }
@@ -289,11 +307,11 @@ footer {
 
 .history-heading {
     color: #fafafa;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
 }
 
 .timeline-item {
-    padding: 4em 2em 0em 2em ;
+    padding: 4em 2em 0em 2em;
     position: relative;
     color: #fafafa;
     border-left: 1px solid;
@@ -304,7 +322,7 @@ footer {
     margin: 0;
 }
 
-.timeline-item:before {
+.timeline-item::before {
     content: attr(data-dates);
     position: absolute;
     left: 2.5em;
@@ -312,12 +330,12 @@ footer {
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: .8em;
     padding: 0;
     margin: 0;
 }
 
-.timeline-item:after {
+.timeline-item::after {
     width: 12px;
     height: 12px;
     display: block;
@@ -355,9 +373,21 @@ button[type="submit"] {
     background-color: #e84610;
 }
 
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
+
 /* ------------------------------------Media Queries */
 
 @media(min-width: 992px) {
+
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
     .center-form {
         padding-top: 30px;
         min-height: 240px;
