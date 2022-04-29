@@ -286,8 +286,7 @@ footer .cv-pdf i:hover {
 
 .progress {
     position: relative;
-    height: 25px;
-    margin-bottom: 4px;
+    height: 25px;    
 }
 
 .progress-type {
@@ -343,8 +342,8 @@ footer .cv-pdf i:hover {
     position: absolute;
     left: -6px;
     border-radius: 12px;
-    content: " ";
-    background-color: #fafafa;
+    content: '';
+    background: #fafafa;
 }
 
 .history-items {
